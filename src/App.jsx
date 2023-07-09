@@ -1,7 +1,8 @@
 import { useState } from "react";
+
 import Header from "./components/Header";
 
-function App() {
+export default function App() {
   const [likes, setLikes] = useState(0);
 
   function handleClick() {
@@ -9,13 +10,9 @@ function App() {
   }
 
   return (
-    <>
-      <div>
-        <Header />
-        <button onClick={handleClick}>Click Times ({likes})</button>
-      </div>
-    </>
+    <main>
+      <Header />
+      <button onClick={handleClick}>Click Times ({likes})</button>
+    </main>
   );
 }
-
-export default App;
