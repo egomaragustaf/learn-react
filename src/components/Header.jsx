@@ -5,7 +5,9 @@ export default function Header({ author }) {
 
   return (
     <header>
-      <h1>Hi there! I am {authorName} 🤘</h1>
+      <h1 className="text-3xl font-bold underline">
+        Hi there! I am {authorName} 🤘
+      </h1>
     </header>
   );
 }

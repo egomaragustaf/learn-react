@@ -12,7 +12,12 @@ export default function App() {
   return (
     <main>
       <Header />
-      <button onClick={handleClick}>Click Times ({likes})</button>
+      <button
+        className="pointer-events-auto rounded-md bg-blue-600 px-3 py-2 text-lg font-semibold leading-5 text-white hover:bg-blue-500"
+        onClick={handleClick}
+      >
+        Clicked {likes} Times
+      </button>
     </main>
   );
 }
